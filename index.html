@@ -6,14 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
 
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/styles/colors/colors.css">
+
     <style media="(prefers-color-scheme: light)">
       @import url('./src/styles/colors/light.css');
     </style>
     <style media="(prefers-color-scheme: dark)">
       @import url('./src/styles/colors/dark.css');
     </style>
+
+    <link rel="stylesheet" href="/src/index.css">
+
+   
   </head>
-  <body>
+
+  <body class="page_body">
+    <div class="test-container">
+      <header class="header">
+
+        <div class="header_top">
+
+          <div class="header_container container"> 
+            <span class="header_time t-14">Monday — Friday 8AM — 9PM</span>
+            <a href="#" class="header__link-geo t-14">725 Park Ave, New York </a>
+            <ul class="social_list header_social">
+              <li class="social_item"> <img src="/src/styles/pictures/Instagram.svg" alt=""> </li>
+              <li class="social_item"> <img src="/src/styles/pictures/Facebook.svg" alt=""></li>
+              <li class="social_item"> <img src="/src/styles/pictures/Twitter.svg" alt=""></li>
+              <li class="social_item"> <img src="/src/styles/pictures/Linked-In.svg" alt=""></li>
+            </ul>
+          </div>
+          
+
+        </div>
+        <div class="header_bot"></div>
+      </header>
+      
+      <main class="main"></main>
+      <footer class="footer"></footer>
+
+      
+    </div>
+    
     <script type="module" src="/src/index.js"></script>
   </body>
 </html>
