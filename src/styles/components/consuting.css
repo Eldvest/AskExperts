@@ -1,0 +1,57 @@
+.consuting {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.consuting__container {
+  display: flex;
+  column-gap: 70px;
+}
+
+.consuting_pictures {
+  max-width: 600px; /* ограничиваем максимальную ширину */
+}
+
+.consuting_text {
+  flex: 1;
+  max-width: 500px; /* или нужная вам ширина */
+  min-width: 300px; /* минимальная ширина */
+}
+
+@media (max-width: 1023px) {
+  .consuting__container {
+    flex-direction: column;
+    column-gap: 0;
+    row-gap: 40px;
+  }
+
+  .consuting_pictures {
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .consuting_text {
+    max-width: 100%;
+    min-width: auto;
+  }
+
+  .counsuting__title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .consuting {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .counsuting__title {
+    font-size: 28px;
+  }
+
+  .descr {
+    font-size: 14px;
+    padding: 3px 10px;
+  }
+}
