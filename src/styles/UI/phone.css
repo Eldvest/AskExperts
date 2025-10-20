@@ -1,0 +1,15 @@
+.phone {
+  border-radius: 42px;
+  padding: 8px 41px 8px 10px;
+  background: var(--color-white);
+
+
+}
+
+.phone_link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+}
+

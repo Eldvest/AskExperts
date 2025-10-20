@@ -1,0 +1,119 @@
+.contact {
+  margin: 155px 0 100px;
+}
+
+.contact__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 60px;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--indentation);
+}
+
+.contact__left {
+  flex: 1 1 45%;
+}
+
+.contact__title {
+  margin-bottom: 20px;
+}
+
+.contact__text {
+  color: var(--grey);
+  margin-bottom: 30px;
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+.contact__list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.card-horizon__article {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.card-horizon__left svg {
+  flex-shrink: 0;
+}
+
+.card-horizon__header {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.card-horizon__description {
+  color: var(--grey);
+}
+
+/* Форма */
+.contact__form {
+  flex: 1 1 45%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form__label {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+.form__label--width {
+  width: 100%;
+}
+
+.form__inp {
+  background-color: var(--grey3);
+  border: 1px solid var(--grey4);
+  border-radius: 10px;
+  padding: 12px 15px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.form__inp--width {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form__btn {
+  margin-top: 20px;
+  background: var(--yellow);
+  color: var(--black);
+  font-weight: 700;
+  padding: 15px 30px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form__btn:hover {
+  background: #f7c53e;
+}
+
+/* 📱 Адаптив */
+@media (max-width: 768px) {
+  .contact__container {
+    flex-direction: column;
+  }
+
+  .form__label {
+    width: 100%;
+  }
+
+  .contact__left {
+    flex: 1 1 100%;
+  }
+
+  .contact__form {
+    flex: 1 1 100%;
+  }
+}

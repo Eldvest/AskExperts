@@ -1,0 +1,30 @@
+/* src/styles/UI/descr.css */
+.descr {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.48; /* раньше 148% */
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-white);
+  border-radius: 20px;
+  padding: 4px 12px; /* 0 12px было, добавил вертикальный отступ */
+  display: inline-block;
+}
+
+.descr-green {
+  color: var(--color-white);
+  background-color: var(--color-green);
+}
+
+/* жёлтый бейдж (контакт) — тёмный текст лучше читается на жёлтом */
+.descr-yellow {
+  background-color: var(--color-yellow);
+  color: var(--color-black); /* сменил на чёрный для читаемости */
+}
+
+/* если вдруг нужен вариант белого текста на жёлтом — можно использовать цвет: var(--color-white) */
+.contact__descr {
+  margin-bottom: 18px;
+  display: inline-block;
+}
